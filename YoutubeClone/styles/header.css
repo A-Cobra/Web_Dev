@@ -9,7 +9,7 @@
     
 }
 .left-section{
-    background-color: brown;
+    /* background-color: brown; */
     margin-right: 68px;
     display: flex;
     /* display: none; */
@@ -32,11 +32,24 @@
     /* border: solid pink 3px; */
 }
 
+
+.center-section{
+    flex: 1;
+    margin-right: 32px;
+    /* background-color: purple; */
+    max-width: 500px; 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
 .searching-section{
 
     flex: 1;
-    margin-right: 32px;
-    background-color: lime;
+    margin-right: 10px;
+    /* background-color: lime; */
     max-width: 450px; 
 
     display: flex;
@@ -56,12 +69,12 @@
     display: flex;
     
     height: 42px;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* Don't put it here */
     /* border-radius: 2px; */
     /* Don't put it here */
     align-items: center;
-    box-shadow: inset 1px 2px 3px rgba(255,255,255,0.3);
+    box-shadow: inset 1px 2px 3px rgba(255,255,255,0.2);
 
 }
 .search-box-container{
@@ -69,6 +82,11 @@
 
 }
 .search-box{
+    /* to avoid item form shrinking use: 
+       flex-shrink: 0;
+       and to shrink inputs
+       put width: 0;
+    */
     /* width: 10px; */
     /* flex: 1; */
     width:100%;
@@ -98,7 +116,7 @@
 
 
 .keyboard-container{
-    background-color: orange;
+    /* background-color: orange; */
     min-width: 22px;
     margin-left:6px;
     margin-right:8px;
@@ -139,8 +157,8 @@
     background-color: #181818;
 }
 .voice-search{
-
-    height:26px;
+    margin-top: 5px;
+    height:22px;
 }
 .voice-search-btn{
     width:100%;
@@ -155,8 +173,40 @@
 
 
 .right-section{
-    background-color: lightpink;
-    width: 204px;
 
+    /* background-color: lightpink; */
+    width: 134px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 34px;
 
+}
+
+.upload-video-icon-container{
+    width: 25px;
+}
+.upload-video-icon{
+    width: 100%;
+}
+
+.notification-icon-container{
+
+    width: 22px;
+}
+.notification-icon{
+
+    width: 100px;
+}
+
+.current-user-icon-container{
+
+    width:34px;
+}
+
+.current-user-icon{
+
+    width:100%;
+    border-radius: 50%;
 }
