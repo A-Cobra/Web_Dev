@@ -1,0 +1,162 @@
+.navigation-header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(36,36,36);
+    /* background-color: rgb(32,32,32); */
+    align-items: center;
+    
+}
+.left-section{
+    background-color: brown;
+    margin-right: 68px;
+    display: flex;
+    /* display: none; */
+    flex-direction: row;
+    align-items: center;
+    min-width: 165px;
+}
+
+.hamburguer-logo{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+.youtube-logo{
+    height: 20px;
+    justify-content: space-between;
+
+    min-width: 80px;
+    /* border: solid pink 3px; */
+}
+
+.searching-section{
+
+    flex: 1;
+    margin-right: 32px;
+    background-color: lime;
+    max-width: 450px; 
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid 1px rgba(255,255,255,0.88);
+    border-radius: 2px;
+    /* height: 44px; */
+
+    
+}
+
+
+.search-bar{
+    flex: 1;
+    background-color: #181818;
+    display: flex;
+    
+    height: 42px;
+    background-color: aqua;
+    /* Don't put it here */
+    /* border-radius: 2px; */
+    /* Don't put it here */
+    align-items: center;
+    box-shadow: inset 1px 2px 3px rgba(255,255,255,0.3);
+
+}
+.search-box-container{
+    flex: 1;
+
+}
+.search-box{
+    /* width: 10px; */
+    /* flex: 1; */
+    width:100%;
+    background-color: transparent;
+    border:none;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.88);
+    /* min-width: 10px; */
+    background-color: transparent;
+    /* background-color: blueviolet; */
+}
+.search-box:active{
+    border:none;
+}
+.search-box:focus{
+    border:none;
+    outline: none;
+}
+
+.search-box::placeholder{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+
+.keyboard-container{
+    background-color: orange;
+    min-width: 22px;
+    margin-left:6px;
+    margin-right:8px;
+    /* width:1f; */
+}
+.keyboard{
+    width: 100%;
+}
+.magnifying-glass-container{
+    height: 42px;
+    min-width:60px;
+    border: none;
+    /* background-color: rgb(100,100,100); */
+    background-color: rgb(80,80,80);
+    /* background-color: rgba(255,255,255,0.08); */
+    border-radius: 0 2px 2px 0;
+
+}
+.magnifying-btn{
+    
+    height: 42px;
+    width:60px;
+    border: none;
+    /* background-color: rgb(100,100,100); */
+    /* background-color: rgb(80,80,80); */
+    background-color: transparent;
+    /* background-color: rgba(255,255,255,0.08); */
+}
+.magnifying-glass{
+
+    height: 30px;
+}
+
+.voice-search-container{
+    min-width: 36px;
+    height:36px;
+    border-radius: 50%;
+    background-color: #181818;
+}
+.voice-search{
+
+    height:26px;
+}
+.voice-search-btn{
+    width:100%;
+    background-color: transparent;
+    border: none;
+}
+/* .voice-search-btn div{
+    height:15px;
+} */
+
+
+
+
+.right-section{
+    background-color: lightpink;
+    width: 204px;
+
+
+}

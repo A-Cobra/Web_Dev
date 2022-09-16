@@ -5,10 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YT Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <!--Styles-->
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <!-- Google Roboto Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    
 </head>
 <body>
-    <input class="search-box" type="text" placeholder="Search">
+    <div class="navigation-header">
+        <div class="left-section">
+            <img class="hamburguer-logo" src="/header-icons/hamburguer.png" alt="">
+            
+            <img class="youtube-logo" src="/header-icons/YouTube_Logo_2017.png" alt="">
+
+        </div>
+        
+        <div class="searching-section">
+            <div class="search-bar">
+                <div class="search-box-container">
+                    <input class="search-box" type="text" placeholder="Search">
+
+                </div>
+                <div class="keyboard-container">
+                    <img class="keyboard" src="/header-icons/keyboard.png" alt="">
+                    
+                </div>
+            </div>
+            <div class="magnifying-glass-container">
+                <button class="magnifying-btn">
+                    <img class="magnifying-glass" src="header-icons/glass.png" alt="magnifying glass">
+                </button>
+            </div>
+        
+        </div>
+        <div class="voice-search-container">
+            <button class="voice-search-btn">
+                <div>
+                    <img class="voice-search" src="header-icons/mic1.png" alt="magnifying glass">
+                </div>
+            </button>
+        </div>
+
+        <!--END OF MIDDLE SECTOR-->    
+
+        <div class="right-section">
+            right
+        </div>
+        
+
+    </div>
+
+    <!--Grid that contains the disposition of the videos-->
+    <div class="videos-grid">
+        
+        <!--1st-->
+        <div class="video-container">
+            <div class="video-thumbnail-container">
+                <img class="video-thumbnail" src="thumbnails/berserk.webp" alt="Berserk Picture">
+            </div>
+            <div class="logo-and-details">
+                <div class="channel-log-container">
+                    <img class="channel-logo" src="logo/logoAnimeHype.jpg" alt="AnimeHype">
+                </div>
+                <div class="video-details">
+                    <p class="video-title">Berserk: The Golden Age Arc - MEMORIAL EDITION</p>
+                    <p class="video-channel">AnimeHypeアニメ日本</p>
+                    <p class="video-stats">조회수 11만회 &#183; 5일 전</p>
+                </div>
+            </div>
+        </div>
+
+        <!--2nd-->
+        <div class="video-container">
+            <div class="video-thumbnail-container">
+                <img class="video-thumbnail" src="thumbnails/webdev.jpg" alt="Berserk Picture">
+            </div>
+            <div class="logo-and-details">
+                <div class="channel-log-container">
+                    <img class="channel-logo" src="logo/websimplified.jpg" alt="AnimeHype">
+                </div>
+                <div class="video-details">
+                    <p class="video-title">How to put an HTML website online (on the Internet) - 2022</p>
+                    <p class="video-channel">SuperSimpleDev</p>
+                    <p class="video-stats">조회수 9.3만회 &#183; 5개월 전</p>
+                </div>
+            </div>
+        </div>
+
+        <!--3rd-->
+        <div class="video-container">
+            <div class="video-thumbnail-container">
+                <img class="video-thumbnail" src="thumbnails/ITZY.jpg" alt="Berserk Picture">
+            </div>
+            <div class="logo-and-details">
+                <div class="channel-log-container">
+                    <img class="channel-logo" src="logo/ITZYLogo.jpg" alt="AnimeHype">
+                </div>
+                <div class="video-details">
+                    <p class="video-title">[ITZY?ITZY!] EP106</p>
+                    <p class="video-channel">ITZY &#9834;</p>
+                    <p class="video-stats">조회수 6.3만회 &#183; 14시간 전</p>
+                </div>
+            </div>
+        </div>
+
+        <!--4th-->
+        <div class="video-container">
+            <div class="video-thumbnail-container">
+                <img class="video-thumbnail" src="thumbnails/reydama.jpg" alt="Berserk Picture">
+            </div>
+            <div class="logo-and-details">
+                <div class="channel-log-container">
+                    <img class="channel-logo" src="logo/logoReyDama.jpg" alt="AnimeHype">
+                </div>
+                <div class="video-details">
+                    <p class="video-title">NO ME ATAQUES LA DAMA!</p>
+                    <p class="video-channel">Juanjogameplay</p>
+                    <p class="video-stats">조회수 921회 &#183; 8시간 전</p>
+                </div>
+            </div>
+        </div>
+
+        <!--5th-->
+        <div class="video-container">
+            <div class="video-thumbnail-container">
+                <img class="video-thumbnail" src="thumbnails/shmeeCar.jpg" alt="Berserk Picture">
+            </div>
+            <div class="logo-and-details">
+                <div class="channel-log-container">
+                    <img class="channel-logo" src="logo/shmee.jpg" alt="AnimeHype">
+                </div>
+                <div class="video-details">
+                    <p class="video-title">VALKYRIE AMR PRO NO-RULES UNLEASHED! My First Experience in the Ultimate Track Hypercar</p>
+                    <p class="video-channel">Shmee150 &#10004</p>
+                    <p class="video-stats">조회수 64만회 &#183; 3개월 전</p>
+                </div>
+            </div>
+        </div>
+
+        <!--6th-->
+        <div class="video-container">
+            <div class="video-thumbnail-container">
+                <img class="video-thumbnail" src="thumbnails/techWithTim.jpg" alt="Berserk Picture">
+            </div>
+            <div class="logo-and-details">
+                <div class="channel-log-container">
+                    <img class="channel-logo" src="logo/tim.jpg" alt="AnimeHype">
+                </div>
+                <div class="video-details">
+                    <p class="video-title">The Programming Project That Got Me a Job!</p>
+                    <p class="video-channel">Tech With Tim &#10004</p>
+                    <p class="video-stats">조회수 22만회 &#183; 1년 전</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!--Grid END-->
+    </div>
+    
     
     
 
