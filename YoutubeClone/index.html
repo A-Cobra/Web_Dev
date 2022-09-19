@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YT Clone</title>
     <!--Styles-->
-    <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/video.css">
+
     <!-- Google Roboto Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +21,16 @@
 </head>
 <body>
     <div class="navigation-header">
+        
         <div class="left-section">
-            <img class="hamburguer-logo" src="/header-icons/hamburguer.png" alt="">
+            <div class="hamburguer-zone">
+                <img class="hamburguer-logo" src="/header-icons/hamburguer.png" alt="">  
+            </div>
             
-            <img class="youtube-logo" src="/header-icons/YouTube_Logo_2017.png" alt="">
+            <div class="youtube-logo-container">
+                <img class="youtube-logo" src="/header-icons/YouTube_Logo_2017.png" alt="">
+                <div class="tooltip">YouTube 홈</div>
+            </div>
 
         </div>
         
@@ -33,7 +41,7 @@
             <div class="searching-section">
                 <div class="search-bar">
                     <div class="search-box-container">
-                        <input class="search-box" type="text" placeholder="Search">
+                        <input class="search-box" type="text" placeholder="검색">
     
                     </div>
                     <div class="keyboard-container">
@@ -45,6 +53,7 @@
                     <button class="magnifying-btn">
                         <img class="magnifying-glass" src="header-icons/glass.png" alt="magnifying glass">
                     </button>
+                    <div class="tooltip">검색</div>
                 </div>
             
             </div>
@@ -53,7 +62,10 @@
                     <div>
                         <img class="voice-search" src="header-icons/mic1.png" alt="magnifying glass">
                     </div>
+                    
                 </button>
+                <div class="tooltip">음성으로 검색</div>
+
             </div>
 
         </div>
@@ -65,9 +77,13 @@
         <div class="right-section">
             <div class="upload-video-icon-container">
                 <img class="upload-video-icon" src="/header-icons/camara.png" alt="">
+                <div class="tooltip">만들기</div>
+
             </div>
             <div class="notification-icon-container">
                 <img class="notification-icon" src="/header-icons/bell.png" alt="">
+                <div class="notification-count">3</div>
+                <div class="tooltip">알림</div>
 
             </div>
             <div class="current-user-icon-container">
@@ -79,6 +95,39 @@
 
     </div>
 
+
+    <!--Side bar that sticks from the left-->
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img class="home" src="/sidebar-icons/home.png" alt="">
+            <div>홈</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="compass" src="/sidebar-icons/compass.png" alt="">
+            <div>탐색</div>
+
+        </div>
+        <div class="sidebar-link">
+            <img class="shorts" src="/sidebar-icons/shorts-youtube-2.png" alt="">
+            <div>Shorts</div>
+
+        </div>
+        <div class="sidebar-link">
+            <img class="subscriptions" src="/sidebar-icons/sub.png" alt="">
+            <div>구독</div>
+
+        </div>
+        <div class="sidebar-link">
+            <img class="library" src="/sidebar-icons/library-youtube-2.png" alt="">
+            <div>보관함</div>
+
+        </div>
+    </div>
+
+
+
+
+
     <!--Grid that contains the disposition of the videos-->
     <div class="videos-grid">
         
@@ -86,9 +135,19 @@
         <div class="video-container">
             <div class="video-thumbnail-container">
                 <img class="video-thumbnail" src="thumbnails/berserk.webp" alt="Berserk Picture">
+                <div class="video-duration">3:14</div>
             </div>
             <div class="logo-and-details">
                 <div class="channel-log-container">
+                    <div class="hover-details">
+                        <div class="hover-details-picture">
+                            <img src="logo/logoAnimeHype.jpg" alt="">
+                        </div>
+                        <div class="hover-channel-details">
+                            <div class="hover-channel-name">AnimeHypeアニメ日本</div>
+                            <div class="hover-channel-subscriber-count">4M susbcribers</div>
+                        </div>
+                    </div>
                     <img class="channel-logo" src="logo/logoAnimeHype.jpg" alt="AnimeHype">
                 </div>
                 <div class="video-details">
@@ -97,16 +156,29 @@
                     <p class="video-stats">조회수 11만회 &#183; 5일 전</p>
                 </div>
             </div>
+            <!---For the animation on hover at a channel-->
+            
+            
         </div>
 
         <!--2nd-->
         <div class="video-container">
             <div class="video-thumbnail-container">
-                <img class="video-thumbnail" src="thumbnails/webdev.jpg" alt="Berserk Picture">
+                <img class="video-thumbnail" src="thumbnails/webdev.jpg" alt="SuperSimpleDev">
+                <div class="video-duration">29:37</div>
             </div>
             <div class="logo-and-details">
                 <div class="channel-log-container">
-                    <img class="channel-logo" src="logo/websimplified.jpg" alt="AnimeHype">
+                    <div class="hover-details">
+                        <div class="hover-details-picture">
+                            <img src="logo/websimplified.jpg" alt="">
+                        </div>
+                        <div class="hover-channel-details">
+                            <div class="hover-channel-name">SuperSimpleDev</div>
+                            <div class="hover-channel-subscriber-count">83K susbcribers</div>
+                        </div>
+                    </div>
+                    <img class="channel-logo" src="logo/websimplified.jpg" alt="SuperSimpleDev">
                 </div>
                 <div class="video-details">
                     <p class="video-title">How to put an HTML website online (on the Internet) - 2022</p>
@@ -119,11 +191,21 @@
         <!--3rd-->
         <div class="video-container">
             <div class="video-thumbnail-container">
-                <img class="video-thumbnail" src="thumbnails/ITZY.jpg" alt="Berserk Picture">
+                <img class="video-thumbnail" src="thumbnails/ITZY.jpg" alt="ITZY">
+                <div class="video-duration">16:16</div>
             </div>
             <div class="logo-and-details">
                 <div class="channel-log-container">
-                    <img class="channel-logo" src="logo/ITZYLogo.jpg" alt="AnimeHype">
+                    <div class="hover-details">
+                        <div class="hover-details-picture">
+                            <img src="logo/ITZYLogo.jpg" alt="">
+                        </div>
+                        <div class="hover-channel-details">
+                            <div class="hover-channel-name">ITZY &#9834;</div>
+                            <div class="hover-channel-subscriber-count">7M susbcribers</div>
+                        </div>
+                    </div>
+                    <img class="channel-logo" src="logo/ITZYLogo.jpg" alt="ITZY">
                 </div>
                 <div class="video-details">
                     <p class="video-title">[ITZY?ITZY!] EP106</p>
@@ -136,11 +218,21 @@
         <!--4th-->
         <div class="video-container">
             <div class="video-thumbnail-container">
-                <img class="video-thumbnail" src="thumbnails/reydama.jpg" alt="Berserk Picture">
+                <img class="video-thumbnail" src="thumbnails/reydama.jpg" alt="Juanjogameplay">
+                <div class="video-duration">10:20</div>
             </div>
             <div class="logo-and-details">
                 <div class="channel-log-container">
-                    <img class="channel-logo" src="logo/logoReyDama.jpg" alt="AnimeHype">
+                    <div class="hover-details">
+                        <div class="hover-details-picture">
+                            <img src="logo/logoReyDama.jpg" alt="">
+                        </div>
+                        <div class="hover-channel-details">
+                            <div class="hover-channel-name">Juanjogameplay</div>
+                            <div class="hover-channel-subscriber-count">272K susbcribers</div>
+                        </div>
+                    </div>
+                    <img class="channel-logo" src="logo/logoReyDama.jpg" alt="Juanjogameplay">
                 </div>
                 <div class="video-details">
                     <p class="video-title">NO ME ATAQUES LA DAMA!</p>
@@ -153,15 +245,25 @@
         <!--5th-->
         <div class="video-container">
             <div class="video-thumbnail-container">
-                <img class="video-thumbnail" src="thumbnails/shmeeCar.jpg" alt="Berserk Picture">
+                <img class="video-thumbnail" src="thumbnails/shmeeCar.jpg" alt="Shmee150">
+                <div class="video-duration">18:26</div>
             </div>
             <div class="logo-and-details">
                 <div class="channel-log-container">
-                    <img class="channel-logo" src="logo/shmee.jpg" alt="AnimeHype">
+                    <div class="hover-details">
+                        <div class="hover-details-picture">
+                            <img src="logo/shmee.jpg" alt="">
+                        </div>
+                        <div class="hover-channel-details">
+                            <div class="hover-channel-name">Shmee150 &#10004;</div>
+                            <div class="hover-channel-subscriber-count">2M susbcribers</div>
+                        </div>
+                    </div>
+                    <img class="channel-logo" src="logo/shmee.jpg" alt="Shmee150">
                 </div>
                 <div class="video-details">
                     <p class="video-title">VALKYRIE AMR PRO NO-RULES UNLEASHED! My First Experience in the Ultimate Track Hypercar</p>
-                    <p class="video-channel">Shmee150 &#10004</p>
+                    <p class="video-channel">Shmee150 &#10004;</p>
                     <p class="video-stats">조회수 64만회 &#183; 3개월 전</p>
                 </div>
             </div>
@@ -170,15 +272,25 @@
         <!--6th-->
         <div class="video-container">
             <div class="video-thumbnail-container">
-                <img class="video-thumbnail" src="thumbnails/techWithTim.jpg" alt="Berserk Picture">
+                <img class="video-thumbnail" src="thumbnails/techWithTim.jpg" alt="Tech with Tim">
+                <div class="video-duration">18:21</div>
             </div>
             <div class="logo-and-details">
                 <div class="channel-log-container">
-                    <img class="channel-logo" src="logo/tim.jpg" alt="AnimeHype">
+                    <div class="hover-details">
+                        <div class="hover-details-picture">
+                            <img src="logo/tim.jpg" alt="">
+                        </div>
+                        <div class="hover-channel-details">
+                            <div class="hover-channel-name">Tech With Tim &#10004;</div>
+                            <div class="hover-channel-subscriber-count">1M susbcribers</div>
+                        </div>
+                    </div>
+                    <img class="channel-logo" src="logo/tim.jpg" alt="Tech with Tim">
                 </div>
                 <div class="video-details">
                     <p class="video-title">The Programming Project That Got Me a Job!</p>
-                    <p class="video-channel">Tech With Tim &#10004</p>
+                    <p class="video-channel">Tech With Tim &#10004;</p>
                     <p class="video-stats">조회수 22만회 &#183; 1년 전</p>
                 </div>
             </div>
