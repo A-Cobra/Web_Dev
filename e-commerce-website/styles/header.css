@@ -1,0 +1,33 @@
+#header{
+    background-color: rgb(244,244,244);
+}
+#header .logo{
+    width: 80px;
+    min-width: 80px;
+}
+#header h1 {
+    color: rgba(126,36,36);
+    font-family: Baskerville Old Face, Roboto, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 26px;
+    flex: 1;
+}
+#header .logo-container{
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+}
+#header .navbar-menu{
+    display: flex;
+}
+
+#header .navbar-menu a{
+    color: rgba(24, 0, 0, 1);
+    text-decoration: none;
+}
+
+#header .navbar-menu li{
+    font-size: 16px;
+    padding: 0 16px;
+    list-style: none;
+}
